@@ -34,7 +34,7 @@ RUN set -x\
 VOLUME /redis/data /redis/modules
 WORKDIR /redis/data
 
-ADD redis/entrypoint.sh /entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
 RUN gem help install
